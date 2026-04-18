@@ -22,18 +22,27 @@ Projet réalisé avec **Node.js, Express, EJS et PostgreSQL** dans le cadre d’
 
 ## Pages principales
  Accueil (Dashboard)
+ 
  Liste des auteurs
+ 
  Liste des livres
+ 
  Ajouter / Modifier / Supprimer
+ 
  Recherche de livres
+ 
  Interface
 
 ## L’application utilise un design simple et moderne avec :
 
 Layout responsive
+
 Navigation claire
+
 Tableaux et cards
+
 CSS personnalisé
+
 ## Demo 
 
 
@@ -44,4 +53,4 @@ https://github.com/user-attachments/assets/ab354ab2-f817-4dbb-ab7f-9abcf46ca7ef
 ## Auteur
 Nom : Fatima-ezzahra Sahmad
 Projet : TP Full Stack Node.js
-Formation : Développement Web
+
