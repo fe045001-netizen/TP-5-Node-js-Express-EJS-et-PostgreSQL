@@ -1,0 +1,15 @@
+import pkg from 'pg';
+const { Pool } = pkg;
+
+const pool = new Pool({
+  user: 'postgres',
+  host: 'localhost',
+  database: 'bibliotheque_db',
+  password: '12345678',
+  port: 5432,
+});
+
+
+export const query = (text, params) => pool.query(text, params);
+
+export default pool;

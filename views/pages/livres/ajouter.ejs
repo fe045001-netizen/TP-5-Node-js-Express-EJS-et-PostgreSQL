@@ -1,0 +1,22 @@
+<%- include('../../partials/header') %>
+<%- include('../../partials/navigation') %>
+
+<div class="container">
+
+<h1> Ajouter un livre</h1>
+
+<form action="/livres/ajouter" method="POST" class="form">
+
+  <input type="text" name="titre" placeholder="Titre" required>
+
+  <textarea name="description" placeholder="Description"></textarea>
+
+  <input type="date" name="date_publication">
+
+  <button type="submit">Ajouter</button>
+
+</form>
+
+</div>
+
+<%- include('../../partials/footer') %>

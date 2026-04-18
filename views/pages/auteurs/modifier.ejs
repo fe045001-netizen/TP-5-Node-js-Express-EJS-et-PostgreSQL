@@ -1,0 +1,15 @@
+<%- include('../../partials/header') %>
+
+<h1>Modifier auteur</h1>
+
+<form method="POST">
+  <input type="text" name="nom" value="<%= auteur.nom %>" required>
+  <input type="text" name="prenom" value="<%= auteur.prenom %>" required>
+  <input type="date" name="date_naissance" value="<%= auteur.date_naissance %>">
+  <input type="text" name="nationalite" value="<%= auteur.nationalite %>">
+  <textarea name="biographie"><%= auteur.biographie %></textarea>
+
+  <button type="submit">Modifier</button>
+</form>
+
+<%- include('../../partials/footer') %>

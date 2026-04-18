@@ -1,0 +1,44 @@
+<%- include('../partials/header') %>
+<%- include('../partials/navigation') %>
+
+<div class="container">
+
+  <h1>Tableau de bord Bibliothèque</h1>
+
+  <div class="grid">
+
+    <!-- AUTEURS -->
+    <div class="card">
+      <h2>Auteurs</h2>
+      <a class="btn" href="/auteurs/ajouter">+ Ajouter</a>
+
+      <ul class="list">
+        <% auteurs.forEach(a => { %>
+          <li>
+            <strong><%= a.nom %></strong>
+            <a href="/auteurs/<%= a.id %>">Détails</a>
+          </li>
+        <% }) %>
+      </ul>
+    </div>
+
+    <!-- LIVRES -->
+    <div class="card">
+      <h2>Livres</h2>
+      <a class="btn" href="/livres/ajouter">+ Ajouter</a>
+
+      <ul class="list">
+        <% livres.forEach(l => { %>
+          <li>
+            <strong><%= l.titre %></strong>
+            <span><%= l.auteur %></span>
+            <a href="/livres/<%= l.id %>">Détails</a>
+          </li>
+        <% }) %>
+      </ul>
+    </div>
+
+  </div>
+</div>
+
+<%- include('../partials/footer') %>

@@ -1,0 +1,9 @@
+<h1>Modifier</h1>
+
+<form action="/livres/<%= livre.id %>/modifier" method="POST">
+  <input type="text" name="titre" value="<%= livre.titre %>">
+  <textarea name="description"><%= livre.description %></textarea>
+  <input type="date" name="date_publication" value="<%= livre.date_publication %>">
+
+  <button>Modifier</button>
+</form>

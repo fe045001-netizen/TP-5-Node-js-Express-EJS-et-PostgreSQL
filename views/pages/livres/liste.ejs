@@ -1,0 +1,32 @@
+<%- include('../../partials/header') %>
+<%- include('../../partials/navigation') %>
+
+<div class="container">
+
+<h1> Liste des livres</h1>
+
+<a href="/livres/ajouter" class="btn"> Ajouter</a>
+
+<table class="table">
+  <tr>
+    <th>ID</th>
+    <th>Titre</th>
+    <th>Actions</th>
+  </tr>
+
+  <% livres.forEach(l => { %>
+    <tr>
+      <td><%= l.id %></td>
+      <td><%= l.titre %></td>
+      <td>
+        <a href="/livres/<%= l.id %>" class="btn">Détails</a>
+        <a href="/livres/<%= l.id %>/modifier" class="btn">Modifier</a>
+      </td>
+    </tr>
+  <% }) %>
+
+</table>
+
+</div>
+
+<%- include('../../partials/footer') %>
